@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ActionBar</string>
+
+    <string name="tab_1">标签一</string>
+    <string name="tab_2">标签二</string>
+    <string name="tab_3">标签三</string>
+
+</resources>
