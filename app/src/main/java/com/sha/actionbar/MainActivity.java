@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
            Toast.makeText(getApplicationContext(),"Connextion est bon",Toast.LENGTH_LONG).show();
        }
-
+       // ajouter les tabs dans notre actionbar
         actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         ActionBar.Tab tab;
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             actionBar.show();
         }
     }
-
+//Le listener de menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuItem menuItem;
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         });
         return super.onCreateOptionsMenu(menu);
     }
-
+//chaque fois quand on choisit un item. l'application va appeler une methode selon l'id de cet item
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_add:
@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
+//le listener de tab
     static class TabListener<T extends Fragment> implements ActionBar.TabListener {
 
         private Fragment mFragment;

@@ -39,7 +39,7 @@ public class Util {
             return NET_WIFI;
         return NET_MOBILE;
     }
-    //Obtenir le meteo par api qui est propose par openweathermap
+    //Obtenir le meteo de temps reels par api qui est propose par openweathermap
     public static TodayWeather getWeatherDatafromNet(String addr) {
         final String address = addr;
         new Thread(new Runnable() {
