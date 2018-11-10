@@ -28,10 +28,10 @@ public class TodayWeather {
 
     public TodayWeather(String temperature, String humidity, String pressure, String wind) {
         DecimalFormat df = new DecimalFormat("0.00");
-        this.temperature = String.valueOf(df.format(Double.parseDouble(temperature)-273.15)+"°C");
-        this.humidity = humidity+"%";
-        this.pressure = pressure+"hpa";
-        this.wind = wind;
+        this.temperature = "Temperature: "+String.valueOf(df.format(Double.parseDouble(temperature)-273.15)+"°C");
+        this.humidity = "Humidite: "+humidity+"%";
+        this.pressure = "Pression:" +pressure+"hpa";
+        this.wind = "Niveau de vent: "+wind;
     }
 
     public TodayWeather() {

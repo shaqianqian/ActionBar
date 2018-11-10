@@ -99,7 +99,7 @@ public class Util {
 
 
         TextView ville = (TextView) view.findViewById(R.id.ville);
-        ville.setText(ville_nom);
+        ville.setText("Ville: "+ville_nom);
 
         TextView temp = (TextView) view.findViewById(R.id.temp);
         temp.setText("");
